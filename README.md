@@ -1,324 +1,78 @@
-GRA-Heisenberg
+# GRA-Heisenberg 🧬✨
 
-LLMs collapse. Optimization collapses. Cognition doesn’t.
-This repository introduces a Heisenberg uncertainty bound for cognition:
-Φ_min as the zero-point energy of thought, implemented via a GRA + LLM hybrid architecture.
+**Hybrid Resonance Algorithm (GRA) for emergent pattern discovery in data & AI systems.**  
+Open research + interactive demos.
 
-Abstract
+[![Run Interactive Demo in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/qqewq/GRA-Heisenberg/blob/main/examples/toy_gra_interactive.ipynb)
 
-We introduce a theory-first cognitive framework in which absolute optimization is fundamentally impossible. Contrary to classical optimization-based AI and contemporary large language models, which tend toward representational collapse under aggressive loss minimization, we postulate the existence of a Heisenberg-type uncertainty bound for cognition.
+---
 
-We formalize a lower bound on cognitive entropy, denoted Φ_min, defined as:
+## 🚀 What is GRA-Heisenberg?
 
-Φ
-min
-⁡
-=
-ℏ
-𝐺
-2
-⋅
-log
-⁡
-dim
-⁡
-(
-𝐻
-𝐺
-)
-Φ
-min
-	​
+GRA-Heisenberg is an **experimental open research project** exploring how **Hybrid Resonance Algorithms** can:
 
-=
-2
-ℏ
-G
-	​
+* Detect hidden patterns in noisy data  
+* Amplify significant signals while suppressing noise  
+* Enable emergent understanding without explicit formulas  
 
-	​
+It bridges **state-based systems** and **AI/LLM integration**, providing a platform for **researchers and engineers to experiment freely**.
 
-⋅logdim(H
-G
-	​
+---
 
-)
+## 🔬 Live Examples
 
-where 
-ℏ
-𝐺
-ℏ
-G
-	​
+### 1️⃣ Static toy example
+**File:** `examples/toy_gra_demo.ipynb`  
+- Step-by-step application of resonance function  
+- Visualizes how significant elements are amplified  
 
- is a task-dependent uncertainty constant and 
-𝐻
-𝐺
-H
-G
-	​
+### 2️⃣ Interactive demo
+**File:** `examples/toy_gra_interactive.ipynb`  
+- Adjustable parameters: threshold, alpha, steps  
+- Dynamic visualization of emergent patterns  
+- Launch in Colab: click the badge above!  
 
- is the solution space of the objective. This bound acts as a zero-point energy of thought, preventing complete elimination of cognitive variability.
+![GRA Demo GIF](https://raw.githubusercontent.com/qqewq/GRA-Heisenberg/main/examples/demo.gif) <!-- Здесь можно вставить свой GIF -->
 
-Building on this principle, we propose a hybrid architecture combining a Generalized Resonant Algorithm (GRA) with Large Language Models (LLMs). GRA enforces structural invariants and orthogonal constraints, while the LLM occupies the residual negentropy permitted by Φ_min. A Heisenberg-like barrier is embedded directly into the optimization functional, ensuring convergence to a stable cognitive equilibrium rather than collapse.
+---
 
-Motivation
+## 🎯 Why it matters
 
-Modern AI systems are built on a hidden assumption:
+* Provides a **hands-on playground** for testing emergent algorithms  
+* Bridges research and practical experimentation  
+* Ready for **citation, forks, and collaboration**  
 
-Better cognition emerges from stronger optimization.
+---
 
-In practice, this assumption fails.
+## 💡 How to contribute / experiment
 
-Deep networks collapse representations under aggressive loss minimization
+1. Fork the repo and try the examples  
+2. Modify parameters (`threshold`, `alpha`, `steps`) to see different behaviors  
+3. Share your observations, ideas, or new toy examples via PR  
+4. Stay tuned for weekly mini-challenges to uncover hidden patterns  
 
-LLMs lose diversity, meaning, and stability
+---
 
-Regularization and entropy tricks only delay collapse
+## 🛠 Installation
 
-This project starts from a different premise:
+```bash
+pip install numpy matplotlib ipywidgets
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+````
 
-Cognition is a bounded physical process.
+Open the notebooks in **JupyterLab, VSCode, or Google Colab** to explore.
 
-Just as quantum systems cannot eliminate uncertainty, cognitive systems cannot reduce entropy below a fundamental limit. Ignoring this limit leads inevitably to collapse.
+---
 
-Core Idea: Φ_min (Cognitive Uncertainty Bound)
+## 📚 Links
 
-We introduce Φ_min — an irreducible lower bound on cognitive entropy.
+* [Pinned Issue #1 — Intellectual Axis](https://github.com/qqewq/GRA-Heisenberg/issues/1)
+* [Examples folder](./examples/)
 
-Δ
-Ψ
-⋅
-Δ
-𝐺
-≥
-ℏ
-𝐺
-2
-ΔΨ⋅ΔG≥
-2
-ℏ
-G
-	​
+---
 
-	​
+*Join the experiment. Discover emergent patterns. Amplify insight.*
 
+```
 
-This implies:
-
-Absolute certainty is impossible
-
-Φ → 0 is physically forbidden
-
-Optimization must stop at Φ_min
-
-Φ_min plays the same role for cognition as:
-
-zero-point energy in quantum mechanics
-
-the uncertainty principle in phase space
-
-Architecture Overview
-
-GRA-Heisenberg is not a larger model — it is a constrained one.
-
-Roles
-
-GRA (Generalized Resonant Algorithm)
-
-Enforces structure, invariants, and orthogonal goals
-
-Suppresses spurious alternatives
-
-Shapes the solution manifold
-
-LLM (Large Language Model)
-
-Fills residual negentropy 
-𝐻
-𝑐
-H
-c
-
-Provides generative flexibility
-
-Never allowed to collapse structure
-
-Heisenberg Barrier
-
-Prevents Φ < Φ_min
-
-Guarantees stability by construction
-
-Conceptual Flow
-Optimization Pressure
-        ↓
-   Heisenberg Barrier (Φ_min)
-        ↓
- ┌─────────────┐
- │  Stable     │
- │  Cognition  │
- └─────────────┘
-
-
-The system does not search for truth among alternatives —
-it renders all alternatives impossible within a fundamental uncertainty bound.
-
-Mathematical Framework (High-Level)
-
-The hybrid objective functional:
-
-𝐿
-(
-Ψ
-)
-=
-Φ
-(
-Ψ
-,
-𝐺
-0
-)
-+
-∑
-𝑖
-𝜆
-𝑖
-𝐿
-𝐺
-𝑖
-+
-𝜇
-max
-⁡
-(
-0
-,
-Φ
-min
-⁡
-−
-Φ
-)
-+
-𝐿
-LLM
-(
-Ψ
-)
-L(Ψ)=Φ(Ψ,G
-0
-	​
-
-)+
-i
-∑
-	​
-
-λ
-i
-	​
-
-L
-G
-i
-	​
-
-	​
-
-+μmax(0,Φ
-min
-	​
-
-−Φ)+L
-LLM
-	​
-
-(Ψ)
-
-Where:
-
-Φ — cognitive foam (entropy)
-
-Φ_min — Heisenberg lower bound
-
-𝐿
-LLM
-L
-LLM
-	​
-
- — generative consistency term
-
-Key Result
-
-Under mild commutativity and expressivity conditions:
-
-an optimal cognitive state exists
-
-it is unique up to Φ_min
-
-collapse is impossible
-
-What This Repository Is (and Is Not)
-
-This repository is:
-
-a foundational framework
-
-a theoretical law-like proposal
-
-a bridge between cognition, physics, and AI
-
-This repository is NOT:
-
-a benchmark leaderboard
-
-a fine-tuned LLM
-
-a drop-in replacement for transformers
-
-Status
-
-🧠 Research / Conceptual / Experimental
-
-Mathematical framework: ✔
-
-Architecture definition: ✔
-
-Toy experiments: in progress
-
-Formal paper: planned (arXiv)
-
-Roadmap
-
- Minimal toy example demonstrating Φ_min
-
- Numerical simulation of collapse vs bounded cognition
-
- Formal proof appendix
-
- arXiv submission
-
-How to Engage
-
-Open issues with formal objections or extensions
-
-Propose toy problems where Φ → 0 would normally collapse
-
-Discuss implications for AGI, interpretability, and alignment
-
-Citation (preliminary)
-@misc{gra_heisenberg,
-  title={GRA-Heisenberg: A Heisenberg Uncertainty Bound for Cognition},
-  author={Oleg},
-  year={2026}
-}
-
-Closing Statement
-
-Optimization is not intelligence.
-Intelligence is optimization that knows when to stop.
-
-Φ_min is where it stops.
+---
